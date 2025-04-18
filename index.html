@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RegEx</title>
+	<link href="style/output.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <form id="formRegex" class="bg-white p-8 rounded shadow-md w-full max-w-md space-y-4">
+    <h2 class="text-2xl font-bold text-center">Formulir RegEX</h2>
+
+    <!-- Email -->
+    <div>
+      <label class="block">Email</label>
+      <input type="email" id="email" required class="w-full border p-2 rounded" />
+      <p id="emailError" class="text-red-error text-sm mt-1 hidden"></p>
+    </div>
+
+    <!-- Username -->
+    <div>
+      <label class="block">Username</label>
+      <input type="text" id="username" required class="w-full border p-2 rounded" />
+      <p id="usernameError" class="text-red-error text-sm mt-1 hidden"></p>
+    </div>
+
+    <!-- NIM -->
+    <div>
+      <label class="block">NIM</label>
+      <input type="text" id="nim" required class="w-full border p-2 rounded" />
+      <p id="nimError" class="text-red-error text-sm mt-1 hidden"></p>
+    </div>
+
+    <!-- Nama -->
+    <div>
+      <label class="block">Nama</label>
+      <input type="text" id="nama" required class="w-full border p-2 rounded" />
+      <p id="namaError" class="text-red-error text-sm mt-1 hidden"></p>
+    </div>
+
+    <!-- Nomor Telepon -->
+    <div>
+      <label class="block">Nomor Telepon</label>
+      <input type="text" id="telepon" required class="w-full border p-2 rounded" />
+      <p id="teleponError" class="text-red-error text-sm mt-1 hidden"></p>
+    </div>
+
+    <!-- Password -->
+    <div>
+      <label class="block">Password</label>
+      <div class="relative">
+        <input type="password" id="password" required class="w-full border p-2 rounded pr-10" />
+        <button type="button" id="togglePassword" class="absolute right-2 top-1/2 transform -translate-y-1/2 text-sm text-blue-500">👁️</button>
+      </div>
+      <p id="passwordError" class="text-red-error text-sm mt-1 hidden"></p>
+    </div>
+
+    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Submit</button>
+  </form>
+
+  <script src="main.js"></script>  
+</body>
+</html>
